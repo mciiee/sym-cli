@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 #include <string.h>
-#include <uchar.h>
-#include <wchar.h>
 
 
 constexpr char SYM_ALPHA_LOWERCASE[]      = "\u03B1";
@@ -35,6 +33,7 @@ typedef struct SymbolEntry {
     const char *name;
     const char *symbol;
 } SymbolEntry;
+
 // A table of O(n) lookup time, but it's small enough, so...
 static const SymbolEntry symbolTable[] = {
     { "alpha",   SYM_ALPHA_LOWERCASE },
