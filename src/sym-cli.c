@@ -81,7 +81,7 @@ int main(int argc, char **argv) {
     (void)argc;
     (void)argv;
     const char *sym = nullptr;
-    for (size_t i = 0; i < (size_t)argc ; i++) {
+    for (size_t i = 1; i < (size_t)argc ; i++) {
         sym = lookupSymbol(argv[i]);
         if (sym == nullptr) {
             fprintf(stderr, "[Error] \"%s\" is not a valid symbol\n", argv[i]);
