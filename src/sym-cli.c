@@ -29,6 +29,32 @@ constexpr char SYM_CHI_LOWERCASE[]        = "\u03C7";
 constexpr char SYM_PSI_LOWERCASE[]        = "\u03C8";
 constexpr char SYM_OMEGA_LOWERCASE[]      = "\u03C9";
 
+
+constexpr char SYM_ALPHA_UPPERCASE[]      = "\u0391";
+constexpr char SYM_BETA_UPPERCASE[]       = "\u0392";
+constexpr char SYM_GAMMA_UPPERCASE[]      = "\u0393";
+constexpr char SYM_DELTA_UPPERCASE[]      = "\u0394";
+constexpr char SYM_EPSILON_UPPERCASE[]    = "\u0395";
+constexpr char SYM_ZETA_UPPERCASE[]       = "\u0396";
+constexpr char SYM_ETA_UPPERCASE[]        = "\u0397";
+constexpr char SYM_THETA_UPPERCASE[]      = "\u0398";
+constexpr char SYM_IOTA_UPPERCASE[]       = "\u0399";
+constexpr char SYM_KAPPA_UPPERCASE[]      = "\u039A";
+constexpr char SYM_LAMBDA_UPPERCASE[]     = "\u039B";
+constexpr char SYM_MU_UPPERCASE[]         = "\u039C";
+constexpr char SYM_NU_UPPERCASE[]         = "\u039D";
+constexpr char SYM_XI_UPPERCASE[]         = "\u039E";
+constexpr char SYM_OMICRON_UPPERCASE[]    = "\u039F";
+constexpr char SYM_PI_UPPERCASE[]         = "\u03A0";
+constexpr char SYM_RHO_UPPERCASE[]        = "\u03A1";
+constexpr char SYM_SIGMA_UPPERCASE[]      = "\u03A3";
+constexpr char SYM_TAU_UPPERCASE[]        = "\u03A4";
+constexpr char SYM_UPSILON_UPPERCASE[]    = "\u03A5";
+constexpr char SYM_PHI_UPPERCASE[]        = "\u03A6";
+constexpr char SYM_CHI_UPPERCASE[]        = "\u03A7";
+constexpr char SYM_PSI_UPPERCASE[]        = "\u03A8";
+constexpr char SYM_OMEGA_UPPERCASE[]      = "\u03A9";
+
 typedef struct SymbolEntry {
     const char *name;
     const char *symbol;
@@ -61,6 +87,31 @@ static const SymbolEntry symbolTable[] = {
     { "chi",     SYM_CHI_LOWERCASE },
     { "psi",     SYM_PSI_LOWERCASE },
     { "omega",   SYM_OMEGA_LOWERCASE },
+
+    { "Alpha",   SYM_ALPHA_UPPERCASE },
+    { "Beta",    SYM_BETA_UPPERCASE },
+    { "Gamma",   SYM_GAMMA_UPPERCASE },
+    { "Delta",   SYM_DELTA_UPPERCASE },
+    { "Epsilon", SYM_EPSILON_UPPERCASE },
+    { "Zeta",    SYM_ZETA_UPPERCASE },
+    { "Eta",     SYM_ETA_UPPERCASE },
+    { "Theta",   SYM_THETA_UPPERCASE },
+    { "Iota",    SYM_IOTA_UPPERCASE },
+    { "Kappa",   SYM_KAPPA_UPPERCASE },
+    { "Lambda",  SYM_LAMBDA_UPPERCASE },
+    { "Mu",      SYM_MU_UPPERCASE },
+    { "Nu",      SYM_NU_UPPERCASE },
+    { "Xi",      SYM_XI_UPPERCASE },
+    { "Omicron", SYM_OMICRON_UPPERCASE },
+    { "Pi",      SYM_PI_UPPERCASE },
+    { "Rho",     SYM_RHO_UPPERCASE },
+    { "Sigma",   SYM_SIGMA_UPPERCASE },
+    { "Tau",     SYM_TAU_UPPERCASE },
+    { "Upsilon", SYM_UPSILON_UPPERCASE },
+    { "Phi",     SYM_PHI_UPPERCASE },
+    { "Chi",     SYM_CHI_UPPERCASE },
+    { "Psi",     SYM_PSI_UPPERCASE },
+    { "Omega",   SYM_OMEGA_UPPERCASE },
 };
 
 const char * lookupSymbol(const char *name) {
