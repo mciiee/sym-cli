@@ -61,6 +61,13 @@ static const SymbolEntry symbolTable[] = {
     { "Chi",     SYM_CHI_UPPERCASE },
     { "Psi",     SYM_PSI_UPPERCASE },
     { "Omega",   SYM_OMEGA_UPPERCASE },
+
+    { "forall", SYM_FORALL },
+    { "exists", SYM_EXISTS },
+    { "not", SYM_NEGATION },
+
+    { "and", SYM_CONJUNCTION },
+    { "or", SYM_DISJUNCTION },
 };
 
 const char * lookupSymbol(const char *name) {

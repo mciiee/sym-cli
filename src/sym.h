@@ -52,4 +52,11 @@ constexpr char SYM_CHI_UPPERCASE[]        = "\u03A7";
 constexpr char SYM_PSI_UPPERCASE[]        = "\u03A8";
 constexpr char SYM_OMEGA_UPPERCASE[]      = "\u03A9";
 
+
+constexpr char SYM_FORALL[] = "\u2200";
+constexpr char SYM_EXISTS[] = "\u2203";
+
+constexpr char SYM_NEGATION[] = "\u00AC";
+constexpr char SYM_CONJUNCTION[] = "\u2227";
+constexpr char SYM_DISJUNCTION[] = "\u2228";
 #endif
