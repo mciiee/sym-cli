@@ -59,4 +59,15 @@ constexpr char SYM_EXISTS[] = "\u2203";
 constexpr char SYM_NEGATION[] = "\u00AC";
 constexpr char SYM_CONJUNCTION[] = "\u2227";
 constexpr char SYM_DISJUNCTION[] = "\u2228";
+
+constexpr char SYM_ARROW_LEFT[] = "\u2190";
+constexpr char SYM_ARROW_UP[] = "\u2191";
+constexpr char SYM_ARROW_RIGHT[] = "\u2192";
+constexpr char SYM_ARROW_DOWN[] = "\u2193";
+
+constexpr char SYM_ARROW_DOUBLE_LEFT[] = "\u21D0";
+constexpr char SYM_ARROW_DOUBLE_UP[] = "\u21D1";
+constexpr char SYM_ARROW_DOUBLE_RIGHT[] = "\u21D2";
+constexpr char SYM_ARROW_DOUBLE_DOWN[] = "\u21D3";
+
 #endif

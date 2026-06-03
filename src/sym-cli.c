@@ -65,9 +65,28 @@ static const SymbolEntry symbolTable[] = {
     { "forall", SYM_FORALL },
     { "exists", SYM_EXISTS },
     { "not", SYM_NEGATION },
+    { "implies", SYM_ARROW_DOUBLE_RIGHT },
 
     { "and", SYM_CONJUNCTION },
     { "or", SYM_DISJUNCTION },
+    
+    { "rarrow", SYM_ARROW_RIGHT },
+    { "uarrow", SYM_ARROW_UP },
+    { "larrow", SYM_ARROW_LEFT },
+    { "darrow", SYM_ARROW_DOWN },
+
+    { "rdarrow", SYM_ARROW_DOUBLE_RIGHT },
+    { "udarrow", SYM_ARROW_DOUBLE_UP },
+    { "ldarrow", SYM_ARROW_DOUBLE_LEFT },
+    { "ddarrow", SYM_ARROW_DOUBLE_DOWN },
+
+
+    { "->", SYM_ARROW_RIGHT },
+    { "<-", SYM_ARROW_LEFT },
+
+
+    { "=>", SYM_ARROW_DOUBLE_RIGHT },
+    { "<=", SYM_ARROW_DOUBLE_LEFT },
 };
 
 const char * lookupSymbol(const char *name) {
