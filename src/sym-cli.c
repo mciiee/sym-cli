@@ -69,6 +69,9 @@ static const SymbolEntry symbolTable[] = {
 
     { "and", SYM_CONJUNCTION },
     { "or", SYM_DISJUNCTION },
+
+    { "And", SYM_CONJUNCTION_BIG },
+    { "Or", SYM_DISJUNCTION_BIG },
     
     { "rarrow", SYM_ARROW_RIGHT },
     { "uarrow", SYM_ARROW_UP },
