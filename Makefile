@@ -6,10 +6,14 @@ SRC_DIR=src
 BUILD_DIR=build
 
 
-$(BUILD_DIR)/sym-cli: $(BUILD_DIR)/sym-cli.o
-	$(CC) $(CCFLAGS) $< -o $@
+$(BUILD_DIR)/sym-cli: $(BUILD_DIR)/sym-cli.o  $(BUILD_DIR)/sym-table.o
+	$(CC) $(CCFLAGS) $^ -o $@
 
 $(BUILD_DIR)/sym-cli.o: $(SRC_DIR)/sym-cli.c build
+	$(CC) -c $(CFLAGS) $< -o $@
+
+
+$(BUILD_DIR)/sym-table.o: $(SRC_DIR)/sym-table.c build
 	$(CC) -c $(CFLAGS) $< -o $@
 
 build:
