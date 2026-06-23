@@ -1,6 +1,7 @@
 #ifndef SYM_TABLE_H
 #define SYM_TABLE_H
 
+#include <stddef.h>
 #include "sym.h"
 
 typedef struct SymbolEntry {
@@ -8,8 +9,12 @@ typedef struct SymbolEntry {
     const char *symbol;
 } SymbolEntry;
 
-// A table of O(n) lookup time, but it's small enough, so...
-static const SymbolEntry symbolTable[] = {
+typedef struct SymbolTable {
+  const size_t size;
+  const SymbolEntry * const entries;
+} SymbolTable;
+
+static const SymbolEntry symbolTableEntries[] = {
     { "alpha",   SYM_ALPHA_LOWERCASE },
     { "beta",    SYM_BETA_LOWERCASE },
     { "gamma",   SYM_GAMMA_LOWERCASE },
@@ -91,6 +96,10 @@ static const SymbolEntry symbolTable[] = {
     { "<=", SYM_ARROW_DOUBLE_LEFT },
 };
 
+const static SymbolTable table = {
+  .size = sizeof(symbolTableEntries)/sizeof(symbolTableEntries[0]),
+  .entries = (const SymbolEntry * const)symbolTableEntries,
+}; 
 
 const char * lookupSymbol(const char *name);
 
