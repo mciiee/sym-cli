@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
+#include <stdint.h>
 
 #include "sym-table.h"
 
-#ifndef ERROR_PREFIX
-#define ERROR_PREFIX "[Error] "
-#endif
+#include "log.h"
 
 
 
 
 int main(int argc, char **argv) {
     if (argc <= 0) {
-        fprintf(stderr, ERROR_PREFIX "No symbols given");
+        LOG_ERROR("No symbols given");
         return -1;
     }
     const char *sym = nullptr;
