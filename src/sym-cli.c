@@ -4,9 +4,12 @@
 #include <unistd.h>
 
 #include "sym-table.h"
-
 #include "log.h"
+#include "opts.h"
 
+struct CliOpts opts = {
+  .sep = "\n",
+};
 
 
 
@@ -22,7 +25,10 @@ int main(int argc, char **argv) {
       fprintf(stderr, ERROR_PREFIX "\"%s\" is not a valid symbol\n", argv[i]);
       continue;
     }
-    printf("%s\n", sym);
+    if (i != 1) {
+      fputs(opts.sep, stdout);
+    }
+    printf("%s", sym);
   }
 
   return 0;

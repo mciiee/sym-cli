@@ -1,5 +1,5 @@
 CC=clang
-CFLAGS=-Wall -Wextra -Werror -std=c23
+CFLAGS=-Wall -Wextra -Werror -std=c23 -D_POSIX_C_SOURCE=2
 CCFLAGS=
 
 SRC_DIR=src
