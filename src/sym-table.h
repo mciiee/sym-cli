@@ -66,6 +66,8 @@ static const SymbolEntry symbolTableEntries[] = {
   {"Psi", SYM_PSI_UPPERCASE},
   {"Omega", SYM_OMEGA_UPPERCASE},
 
+  {"in", SYM_ELEMENT_OF},
+
   {"forall", SYM_FORALL},
   {"exists", SYM_EXISTS},
   {"not", SYM_NEGATION},

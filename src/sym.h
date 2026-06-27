@@ -68,7 +68,13 @@ constexpr char SYM_ARROW_DOUBLE_UP[] = "\u21D1";
 constexpr char SYM_ARROW_DOUBLE_RIGHT[] = "\u21D2";
 constexpr char SYM_ARROW_DOUBLE_DOWN[] = "\u21D3";
 
+constexpr char SYM_ELEMENT_OF[] = "\u2208";
+constexpr char SYM_NOT_ELEMENT_OF[] = "\u2209";
+constexpr char SYM_CONTAINS[] = "\u220B";
+constexpr char SYM_NOT_CONTAINS[] = "\u220C";
+
 constexpr char SYM_CONJUNCTION_BIG[] = "\u22C0";
 constexpr char SYM_DISJUNCTION_BIG[] = "\u22C1";
+
 
 #endif
