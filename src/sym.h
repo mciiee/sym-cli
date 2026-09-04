@@ -76,5 +76,10 @@ constexpr char SYM_NOT_CONTAINS[] = "\u220C";
 constexpr char SYM_CONJUNCTION_BIG[] = "\u22C0";
 constexpr char SYM_DISJUNCTION_BIG[] = "\u22C1";
 
+constexpr char SYM_SUBSET_STRICT[] = "\u2282";
+constexpr char SYM_SUPERSET_STRICT[] = "\u2283";
+
+constexpr char SYM_SUBSET[] = "\u2286";
+constexpr char SYM_SUPERSET[] = "\u2287";
 
 #endif

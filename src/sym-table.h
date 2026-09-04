@@ -94,6 +94,17 @@ static const SymbolEntry symbolTableEntries[] = {
 
   {"=>", SYM_ARROW_DOUBLE_RIGHT},
   {"<=", SYM_ARROW_DOUBLE_LEFT},
+
+  {"sub", SYM_SUBSET},
+  {"super", SYM_SUPERSET},
+  {"subset", SYM_SUBSET},
+  {"superset", SYM_SUPERSET},
+
+  {"sub.strict", SYM_SUBSET_STRICT},
+  {"super.strict", SYM_SUPERSET_STRICT},
+  {"subset.strict", SYM_SUBSET_STRICT},
+  {"superset.strict", SYM_SUPERSET_STRICT},
+
 };
 
 const static SymbolTable table = {
